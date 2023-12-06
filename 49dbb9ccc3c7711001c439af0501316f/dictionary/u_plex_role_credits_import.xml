@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c1a3189dc3f6755001c439af050131fd" extends="sys_import_set_row" label="Plex - Import - Role Credits" max_length="40" name="u_plex_role_credits_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_bio" label="Bio" max_length="10000" name="u_bio" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_id" label="ID" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_poster" label="Poster" max_length="100" name="u_poster" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_title" label="Title" max_length="400" name="u_title" type="string"/>
+    </element>
+</database>

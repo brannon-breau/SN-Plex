@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_gender" table="u_plex_roles" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_gender</element>
+            <name>u_plex_roles</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-26 00:35:27</sys_created_on>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>u_gender</sys_name>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+            <sys_update_name>sys_choice_u_plex_roles_u_gender</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:40:32</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not set / not specified</label>
+            <language>en</language>
+            <name>u_plex_roles</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-26 00:35:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-26 00:35:27</sys_updated_on>
+            <value>0</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Female</label>
+            <language>en</language>
+            <name>u_plex_roles</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-26 00:35:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-26 00:35:27</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Male</label>
+            <language>en</language>
+            <name>u_plex_roles</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-26 00:35:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-26 00:35:27</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_gender</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Non-binary</label>
+            <language>en</language>
+            <name>u_plex_roles</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-26 00:35:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-26 00:35:27</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40dc5a7e0000001</claim_timestamp>
+        <metadata_update_name>sys_choice_u_plex_roles_u_gender</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:40:32</sys_created_on>
+        <sys_id>db2ff544c30b711001c439af050131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:40:32</sys_updated_on>
+    </sys_claim>
+</record_update>

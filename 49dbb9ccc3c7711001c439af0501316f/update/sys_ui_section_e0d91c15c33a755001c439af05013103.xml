@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="e0d91c15c33a755001c439af05013103" sys_domain="global" table="u_plex_role_bio_import" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_bio</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>d3e70239c372395001c439af05013115</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>9be70239c372395001c439af05013115</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_birthplace</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>1fe70239c372395001c439af05013115</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_deathday</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>9fe70239c372395001c439af05013115</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_department</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>13e70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>93e70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_birthday</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>17e70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_imdbid</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>97e70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_profile</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>1be70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_tmdbid</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>9be70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-29 21:32:26</sys_created_on>
+            <sys_id>1fe70239c372395001c439af05013116</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="u_plex_role_bio_import" sys_domain="global" view="Default view">e0d91c15c33a755001c439af05013103</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-11-29 21:32:26</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>u_plex_role_bio_import</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-11-28 00:14:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0d91c15c33a755001c439af05013103</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>u_plex_role_bio_import</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+            <sys_update_name>sys_ui_section_e0d91c15c33a755001c439af05013103</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-06 20:38:58</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40daebe10000001</claim_timestamp>
+        <metadata_update_name>sys_ui_section_e0d91c15c33a755001c439af05013103</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:38:58</sys_created_on>
+        <sys_id>18de3144c30b711001c439af05013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:38:58</sys_updated_on>
+    </sys_claim>
+</record_update>

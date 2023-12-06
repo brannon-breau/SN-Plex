@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7eb1e1efc3aebd1001c439af050131f3" label="Plex - Data - Genres" max_length="40" name="u_plex_genre" type="collection">
+        <element default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element display="true" label="Title" max_length="40" name="u_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="TMDB ID" max_length="40" name="u_tmdb_id" type="string"/>
+    </element>
+</database>

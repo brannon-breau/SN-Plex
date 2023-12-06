@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="eb713d23c322fd1001c439af050131cb" label="Plex - Data - Countries" max_length="40" name="u_plex_countries" type="collection">
+        <element default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element display="true" label="Country" max_length="40" name="u_country" type="string"/>
+    </element>
+</database>

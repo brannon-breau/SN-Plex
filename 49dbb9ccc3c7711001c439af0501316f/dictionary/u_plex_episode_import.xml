@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="23d6005cc3f6715001c439af050131b9" extends="sys_import_set_row" label="Plex - Import - Episodes" max_length="40" name="u_plex_episode_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_addedAt" label="u_addedAt" max_length="40" name="u_addedat" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_audienceRating" label="u_audienceRating" max_length="40" name="u_audiencerating" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_childCount" label="u_childCount" max_length="40" name="u_childcount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_contentRating" label="u_contentRating" max_length="40" name="u_contentrating" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_country" label="Country" max_length="10000" name="u_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_duration" label="Duration" max_length="40" name="u_duration" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_episodeNumber" label="u_episodeNumber" max_length="40" name="u_episodenumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_genre" label="Genre" max_length="10000" name="u_genre" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_guid" label="Guid" max_length="40" name="u_guid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_key" label="Key" max_length="40" name="u_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_lastViewedAt" label="u_lastViewedAt" max_length="40" name="u_lastviewedat" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_originallyAvailableAt" label="u_originallyAvailableAt" max_length="40" name="u_originallyavailableat" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_parent" label="Parent" max_length="40" name="u_parent" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_role" label="Role" max_length="10000" name="u_role" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_skipCount" label="u_skipCount" max_length="40" name="u_skipcount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_studio" label="Studio" max_length="40" name="u_studio" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_summary" label="Summary" max_length="10000" name="u_summary" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_tagline" label="Tagline" max_length="84" name="u_tagline" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_thumb" label="Thumb" max_length="41" name="u_thumb" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_title" label="Title" max_length="400" name="u_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_type" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_updatedAt" label="u_updatedAt" max_length="40" name="u_updatedat" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_viewCount" label="u_viewCount" max_length="40" name="u_viewcount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_year" label="Year" max_length="40" name="u_year" type="string"/>
+    </element>
+</database>

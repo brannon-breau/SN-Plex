@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Plex - TV Show Imports</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>u_plex_tv_show_import</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>u_plex_tv_show_import_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-22 11:16:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>add7ff97c32abd1001c439af0501314d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Plex - Import - TV Shows</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_app_module_add7ff97c32abd1001c439af0501314d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:51:14</sys_updated_on>
+        <timeline_page/>
+        <title>Plex - Import - TV Shows</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40def1980000001</claim_timestamp>
+        <metadata_update_name>sys_app_module_add7ff97c32abd1001c439af0501314d</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:43:21</sys_created_on>
+        <sys_id>3cdfb584c30b711001c439af05013124</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:21</sys_updated_on>
+    </sys_claim>
+</record_update>

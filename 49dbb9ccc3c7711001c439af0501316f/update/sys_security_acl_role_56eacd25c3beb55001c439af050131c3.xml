@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 22:27:23</sys_created_on>
+        <sys_id>56eacd25c3beb55001c439af050131c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_plex_media_details_import.u_plex_media_details_import_user</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_security_acl display_value="u_plex_media_details_import">16eacd25c3beb55001c439af050131c0</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_56eacd25c3beb55001c439af050131c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:30:02</sys_updated_on>
+        <sys_user_role display_value="u_plex_media_details_import_user" name="u_plex_media_details_import_user">5aea0925c3beb55001c439af050131f4</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40d2bfa50000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_56eacd25c3beb55001c439af050131c3</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:30:02</sys_created_on>
+        <sys_id>edccb540c30b711001c439af050131ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:30:02</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="bd56d578c33ef15001c439af050131cc" extends="u_plex" label="Plex - Data - Movies" max_length="40" name="u_plex_movies" type="collection">
+        <element label="Dupe Reviewed" max_length="40" name="u_dupe_reviewed" type="boolean"/>
+        <element label="New Icon" max_length="100" name="u_icon_1" type="icon"/>
+    </element>
+</database>

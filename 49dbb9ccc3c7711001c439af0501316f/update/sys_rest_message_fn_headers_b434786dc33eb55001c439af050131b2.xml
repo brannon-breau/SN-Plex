@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
+        <name>Authorization</name>
+        <rest_message_function display_value="Get Movie Search">2034342dc33eb55001c439af0501319a</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 20:56:30</sys_created_on>
+        <sys_id>b434786dc33eb55001c439af050131b2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_b434786dc33eb55001c439af050131b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:23</sys_updated_on>
+        <value>Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwZTg5NWRiMTZjMDhkZGE3NjI3MGU2OTFjNzQ3OGViZSIsInN1YiI6IjY1NjI4YjQyMjQ0MTgyMDBlYmU0OTkyYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.L5hXMnSAZsgKIOTvzsLCElgTFpjkS9nnJ0phpKkynEI</value>
+    </sys_rest_message_fn_headers>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40def8780000001</claim_timestamp>
+        <metadata_update_name>sys_rest_message_fn_headers_b434786dc33eb55001c439af050131b2</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:43:23</sys_created_on>
+        <sys_id>81dfb584c30b711001c439af050131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:23</sys_updated_on>
+    </sys_claim>
+</record_update>

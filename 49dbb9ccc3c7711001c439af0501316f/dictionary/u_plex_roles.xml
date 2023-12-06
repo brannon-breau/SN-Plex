@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="61226defc3aebd1001c439af05013142" label="Plex - Data - Roles" max_length="40" name="u_plex_roles" type="collection">
+        <element default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Biography" max_length="40000" name="u_biography" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Birthday" max_length="40" name="u_birthday" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Birth Place" max_length="100" name="u_birth_place" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Deathday" max_length="40" name="u_deathday" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Known For Department" max_length="40" name="u_deparment" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="u_gender" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not set / not specified" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Male" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Non-binary" sequence="3" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="IMDB ID" max_length="40" name="u_imdb_id" type="string"/>
+        <element default="&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;https://encrypted-tbn0.gstatic.com/images?q&amp;#61;tbn:ANd9GcT-r_cd2YunvZ5iqRYvb4QJ312hlRGqDNnTRmLVuxRw7CDnH1yQLf6dKrCdJ-9dCrwukHI&amp;amp;usqp&amp;#61;CAU&quot; width=&quot;200&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;" label="Poster" max_length="65536" name="u_poster" read_only="true" type="html"/>
+        <element display="true" label="Name" max_length="100" name="u_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Found on TMDB" max_length="40" name="u_tmdb_found" type="string">
+            <choice>
+                <element inactive_on_update="false" label="True" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="False" sequence="1" value="1"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="TMDB ID" max_length="40" name="u_tmdb_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="TMDB Popularity" max_length="40" name="u_tmdb_popularity" type="string"/>
+        <index name="index">
+            <element name="u_title"/>
+        </index>
+        <index name="index2">
+            <element name="u_tmdb_id"/>
+        </index>
+    </element>
+</database>

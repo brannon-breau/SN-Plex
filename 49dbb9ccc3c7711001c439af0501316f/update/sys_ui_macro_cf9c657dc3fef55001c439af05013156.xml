@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>IMDB_Link</name>
+        <scoped_name/>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 19:46:15</sys_created_on>
+        <sys_id>cf9c657dc3fef55001c439af05013156</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>IMDB_Link</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_ui_macro_cf9c657dc3fef55001c439af05013156</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:30:57</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<j:set var="jar_n" value="open_imdb_url_${ref}"/>
+	<span id="${jvar_n}" onclick="open_imdb_url('${ref}')" title="View IMDB Page" alt="View IMDB Page" tabindex="0" class="btn btn-default icon-open-document-new-tab">
+		<span class="sr-only">open_imdb_url</span>
+	</span>
+
+	<script>
+		function open_imdb_url(reference) {
+
+			var imdbID = g_form.getValue('u_imdb_id');
+			var url = "https://www.imdb.com/title/" + imdbID;
+			window.open(url);
+
+		}
+		
+	</script>
+
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40d396750000001</claim_timestamp>
+        <metadata_update_name>sys_ui_macro_cf9c657dc3fef55001c439af05013156</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:30:57</sys_created_on>
+        <sys_id>8ffc3d40c30b711001c439af0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:30:57</sys_updated_on>
+    </sys_claim>
+</record_update>

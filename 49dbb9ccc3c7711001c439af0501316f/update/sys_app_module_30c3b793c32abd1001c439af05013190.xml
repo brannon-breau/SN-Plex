@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_data_source">nameSTARTSWITHPlex^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="Plex"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Pleax Data Sources</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_data_source</name>
+        <order>31</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-22 11:01:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30c3b793c32abd1001c439af05013190</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Pleax Data Sources</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_app_module_30c3b793c32abd1001c439af05013190</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:29:58</sys_updated_on>
+        <timeline_page/>
+        <title>Pleax Data Sources</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40d2ae080000001</claim_timestamp>
+        <metadata_update_name>sys_app_module_30c3b793c32abd1001c439af05013190</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:29:58</sys_created_on>
+        <sys_id>24cc3540c30b711001c439af0501319e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:29:58</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scheduled_import_set">
+    <scheduled_import_set action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <concurrent_import>false</concurrent_import>
+        <condition/>
+        <conditional>false</conditional>
+        <connection_override display_value="MicrosoftImageAnalysis">e729df5153761110c271ddeeff7b124d</connection_override>
+        <data_source display_value="Plex (TMDB) Get Credits">e5d00c6dc3b6b55001c439af050131f1</data_source>
+        <entered_time/>
+        <map/>
+        <max_drift/>
+        <name>Plex - Movie Credits</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <order>80</order>
+        <parent display_value="Plex">464d00e1c33ab55001c439af050131e0</parent>
+        <partition_method>roundRobin</partition_method>
+        <partition_script><![CDATA[(function partitionHash(import_set_row) {
+
+	// Add your code here
+	
+	// eg:
+	// return import_set_row.u_important_category;
+	// This would ensure all rows with the same 'u_important_category' value will be in the same Import Set.
+
+	 return import_set_row.sys_import_row;
+
+})(import_set_row);]]></partition_script>
+        <partition_size/>
+        <post_script/>
+        <post_script_bool>false</post_script_bool>
+        <pre_script/>
+        <pre_script_bool>false</pre_script_bool>
+        <record_source>regular</record_source>
+        <run_as display_value="Brannon Breau">ef5dc0e1c33ab55001c439af05013149</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2023-11-28 18:04:54</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>parent</run_type>
+        <show_connection_override>true</show_connection_override>
+        <synchronize_inserts>true</synchronize_inserts>
+        <sys_class_name>scheduled_import_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 18:05:21</sys_created_on>
+        <sys_id>91de0825c33ab55001c439af0501316a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Plex - Movie Credits</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>scheduled_import_set_91de0825c33ab55001c439af0501316a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:20</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <use_child_connection>false</use_child_connection>
+    </scheduled_import_set>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40deecb70000001</claim_timestamp>
+        <metadata_update_name>scheduled_import_set_91de0825c33ab55001c439af0501316a</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:43:20</sys_created_on>
+        <sys_id>60df7584c30b711001c439af0501314d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:20</sys_updated_on>
+    </sys_claim>
+</record_update>
