@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3d2d212fc3eebd1001c439af05013167" extends="u_plex" label="Plex - Data - TV Shows" max_length="40" name="u_plex_tv_shows" type="collection">
+        <element choice="3" default="yes" label="Continuing" max_length="40" name="u_continuing" type="string">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+    </element>
+</database>

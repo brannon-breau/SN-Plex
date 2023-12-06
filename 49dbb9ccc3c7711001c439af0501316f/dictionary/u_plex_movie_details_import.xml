@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ac863421c37eb55001c439af05013103" extends="sys_import_set_row" label="Plex - Import - Movie Details" max_length="40" name="u_plex_movie_details_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_genre" label="Genre" max_length="10000" name="u_genre" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_poster" label="Poster" max_length="40" name="u_poster" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_title" label="Title" max_length="400" name="u_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_tmdbID" label="u_tmdbID" max_length="40" name="u_tmdbid" type="string"/>
+    </element>
+</database>

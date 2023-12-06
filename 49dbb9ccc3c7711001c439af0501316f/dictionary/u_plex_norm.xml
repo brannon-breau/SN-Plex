@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="bcd764c2c33a795001c439af0501316d" label="Plex - Data - Normalization" max_length="40" name="u_plex_norm" type="collection">
+        <element display="true" label="Title" max_length="32" name="u_title" reference="u_plex_roles" type="reference"/>
+        <element label="Variants" max_length="10000" name="u_variants" reference="u_plex_roles" type="glide_list"/>
+        <index name="index">
+            <element name="u_title"/>
+        </index>
+    </element>
+</database>

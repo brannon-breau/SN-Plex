@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Plex Roles activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.u_plex_roles_activity.fields</name>
+        <read_roles/>
+        <suffix>global</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-26 15:08:31</sys_created_on>
+        <sys_id>0e43d1b4c33ef15001c439af050131b0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>glide.ui.u_plex_roles_activity.fields</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_properties_0e43d1b4c33ef15001c439af050131b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:18</sys_updated_on>
+        <type>string</type>
+        <value>u_active,u_biography,u_birth_place,u_birthday,sys_created_on,sys_created_by,u_deathday,u_tmdb_found,u_gender,u_title,u_tmdb_id,u_tmdb_popularity,sys_tags,sys_updated_on,sys_updated_by,sys_mod_count,u_imdb_id,u_deparment,*Relations*</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e43d1b4c33ef15001c439af050131b0"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40dee5f80000001</claim_timestamp>
+        <metadata_update_name>sys_properties_0e43d1b4c33ef15001c439af050131b0</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:43:18</sys_created_on>
+        <sys_id>c8df3584c30b711001c439af050131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:18</sys_updated_on>
+    </sys_claim>
+</record_update>

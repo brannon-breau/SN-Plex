@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>u_plex_roles</basic_apply_to>
+        <basic_query_from>u_plex</basic_query_from>
+        <insert_callback/>
+        <name>Related Movies On Plex</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+    // Add your code here, such as current.addQuery(field, value);
+    current.addEncodedQuery('u_available_on_plex=true^u_type=movie^u_role=' + parent.sys_id);
+
+
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-26 02:28:48</sys_created_on>
+        <sys_id>a165eea4c372f15001c439af0501316f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Related Movies On Plex</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_relationship_a165eea4c372f15001c439af0501316f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:30:58</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=a165eea4c372f15001c439af0501316f"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40d3999d0000001</claim_timestamp>
+        <metadata_update_name>sys_relationship_a165eea4c372f15001c439af0501316f</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:30:58</sys_created_on>
+        <sys_id>93fc3d40c30b711001c439af05013196</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:30:58</sys_updated_on>
+    </sys_claim>
+</record_update>

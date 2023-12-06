@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="cd495d27c3aebd1001c439af050131a7" label="Plex" max_length="40" name="u_plex" type="collection">
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="true" label="Active" max_length="40" name="u_active" type="boolean"/>
+        <element label="Agent" max_length="40" name="u_agent" type="string"/>
+        <element label="Allow Sync" max_length="40" name="u_allow_sync" type="string"/>
+        <element label="Audience Rating" max_length="40" name="u_audience_rating" type="string"/>
+        <element label="Available on Plex" max_length="40" name="u_available_on_plex" type="boolean"/>
+        <element label="Child Count" max_length="40" name="u_child_count" type="string"/>
+        <element label="Composite" max_length="40" name="u_composite" type="string"/>
+        <element label="Content" max_length="40" name="u_content" type="string"/>
+        <element label="Content Change At" max_length="40" name="u_content_change_at" type="string"/>
+        <element label="Content Rating" max_length="40" name="u_content_rating" type="string"/>
+        <element label="Country" max_length="10000" name="u_country" reference="u_plex_countries" type="glide_list"/>
+        <element label="Created At" max_length="40" name="u_created_at" type="glide_date_time"/>
+        <element label="Director" max_length="10000" name="u_director" reference="u_plex_roles" type="glide_list"/>
+        <element label="Directory" max_length="40" name="u_directory" type="string"/>
+        <element label="Duration" max_length="40" name="u_duration" type="string"/>
+        <element label="Episode Number" max_length="40" name="u_episode_number" type="string"/>
+        <element label="Filters" max_length="40" name="u_filters" type="string"/>
+        <element label="Genre" max_length="10000" name="u_genre" reference="u_plex_genre" type="glide_list"/>
+        <element label="GUID" max_length="40" name="u_guid" type="string"/>
+        <element label="Hidden" max_length="40" name="u_hidden" type="string"/>
+        <element attributes=" ref_contributions=IMDB_Link" label="IMDB ID" max_length="40" name="u_imdb_id" type="string"/>
+        <element label="IMDB Rating" max_length="40" name="u_imdb_rating" type="string"/>
+        <element label="Key" max_length="40" name="u_key" type="string"/>
+        <element label="Last Viewed At" max_length="40" name="u_last_viwed_at" type="glide_date_time"/>
+        <element label="Originally Available At" max_length="40" name="u_originally_available_at" type="glide_date"/>
+        <element label="Parent" max_length="32" name="u_parent" reference="u_plex" type="reference"/>
+        <element default="&lt;p&gt;&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-r_cd2YunvZ5iqRYvb4QJ312hlRGqDNnTRmLVuxRw7CDnH1yQLf6dKrCdJ-9dCrwukHI&amp;usqp=CAU&quot; width=&quot;200&quot; height=&quot;300&quot; /&gt;&lt;/p&gt;" label="Poster" max_length="8000" name="u_poster" read_only="true" type="html"/>
+        <element label="Producer" max_length="10000" name="u_producer" reference="u_plex_roles" type="glide_list"/>
+        <element label="Refreshing" max_length="40" name="u_refreshing" type="string"/>
+        <element choice="3" default="no" label="Requested" max_length="40" name="u_requested" type="string">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element label="Role" max_length="10000" name="u_role" reference="u_plex_roles" reference_floats="true" type="glide_list"/>
+        <element label="Rrotten Tomatoes Rating" max_length="40" name="u_rrotten_tomatoes_rating" type="string"/>
+        <element label="Scanned At" max_length="40" name="u_scanned_at" type="string"/>
+        <element label="Scanner" max_length="40" name="u_scanner" type="string"/>
+        <element label="Season Count" max_length="40" name="u_season_count" type="string"/>
+        <element label="Skip Count" max_length="40" name="u_skip_count" type="string"/>
+        <element label="Studio" max_length="40" name="u_studio" type="string"/>
+        <element label="Summary" max_length="4000" name="u_summary" type="string"/>
+        <element label="Tagline" max_length="4000" name="u_tagline" type="string"/>
+        <element label="Thumb" max_length="40" name="u_thumb" type="string"/>
+        <element display="true" label="Title" max_length="100" name="u_title" type="string"/>
+        <element attributes="ref_contributions=TMDB_Link" label="TMDB ID" max_length="40" name="u_tmdb_id" type="string"/>
+        <element label="TMDB Rating" max_length="40" name="u_tmdb_rating" type="string"/>
+        <element label="TVDB ID" max_length="40" name="u_tvdb_id" type="string"/>
+        <element label="Type" max_length="40" name="u_type" type="string"/>
+        <element label="Updated At" max_length="40" name="u_updatedat" type="glide_date_time"/>
+        <element label="UUID" max_length="40" name="u_uuid" type="string"/>
+        <element label="View Count" max_length="40" name="u_view_count" type="string"/>
+        <element label="Writer" max_length="10000" name="u_writer" reference="u_plex_roles" type="glide_list"/>
+        <element label="Year" max_length="40" name="u_year" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_director"/>
+        </index>
+        <index name="index3">
+            <element name="u_parent"/>
+        </index>
+        <index name="index4">
+            <element name="u_writer"/>
+        </index>
+    </element>
+</database>

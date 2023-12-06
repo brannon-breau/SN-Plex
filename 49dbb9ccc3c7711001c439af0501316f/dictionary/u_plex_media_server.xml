@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="33fa9da7c3aebd1001c439af050131b4" extends="u_plex" label="Plex - Data - Media Servers" max_length="40" name="u_plex_media_server" type="collection">
+        <element label="Allow Camera Upload" max_length="40" name="u_allow_camera_upload" type="string"/>
+        <element label="Allow Channel Access" max_length="40" name="u_allow_channel_access" type="string"/>
+        <element label="Allow Media Deleion" max_length="40" name="u_allow_media_deleion" type="string"/>
+        <element label="Allow Sharing" max_length="40" name="u_allow_sharing" type="string"/>
+        <element label="Allow Tuners" max_length="40" name="u_allow_tuners" type="string"/>
+        <element label="Background Processing" max_length="40" name="u_background_processing" type="string"/>
+        <element label="Certificate" max_length="40" name="u_certificate" type="string"/>
+        <element label="Companion Proxy" max_length="40" name="u_companion_proxy" type="string"/>
+        <element label="Country Code" max_length="40" name="u_country_code" type="string"/>
+        <element label="Platform" max_length="40" name="u_platform" type="string"/>
+        <element label="Platform Version" max_length="40" name="u_platform_version" type="string"/>
+        <element label="Version" max_length="40" name="u_version" type="string"/>
+    </element>
+</database>

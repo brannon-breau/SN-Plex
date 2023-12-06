@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="516fca60c332f15001c439af05013129" extends="sys_import_set_row" label="Plex - Import - Roles (TMDB)" max_length="40" name="u_plex_roles_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_found" label="Found" max_length="40" name="u_found" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_gender" label="Gender" max_length="40" name="u_gender" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_id" label="ID" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_name" label="Name" max_length="400" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=u_popularity" label="Popularity" max_length="40" name="u_popularity" type="string"/>
+    </element>
+</database>

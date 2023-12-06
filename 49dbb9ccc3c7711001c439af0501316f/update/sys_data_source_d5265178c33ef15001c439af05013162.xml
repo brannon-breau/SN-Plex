@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <batch_size>1000</batch_size>
+        <category/>
+        <connection_override_last_success_time/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url/>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <data_in_single_column>false</data_in_single_column>
+        <data_loader><![CDATA[(function loadData(import_set_table) {
+
+    var libarayGUID = new GlideRecord('u_plex_library');
+    libarayGUID.addEncodedQuery('u_active=true^u_type=movie^u_title!=Learning');
+    libarayGUID.query();
+
+    while (libarayGUID.next()) {
+
+        var parentRec = libarayGUID.sys_id + '';
+
+        var getRecordData = new sn_ws.RESTMessageV2('Plex', 'Library Details');
+        getRecordData.setStringParameterNoEscape('libraryGUID', libarayGUID.u_key + '');
+
+        var response = getRecordData.execute();
+        var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+
+        if (response.haveError()) {
+            return;
+        }
+
+        if (httpStatus == 200 || httpStatus == '200') {
+
+            var recordData = JSON.parse(responseBody);
+            processData(recordData.MediaContainer.Metadata, parentRec);
+        }
+    }
+
+    function processData(recordData, parentRec) {
+
+        for (var recordDataIdx = 0; recordDataIdx < recordData.length; recordDataIdx++) {
+
+            var roleArray = [];
+            var genreArray = [];
+            var countryArray = [];
+			var writerArray = [];
+			var directorArray = [];
+
+            var roleRaw = recordData[recordDataIdx].Role;
+            var genreRaw = recordData[recordDataIdx].Genre;
+            var countryRaw = recordData[recordDataIdx].Country;
+			var writerRaw = recordData[recordDataIdx].Writer;
+			var directorRaw = recordData[recordDataIdx].Director;
+
+            for (var roleDataIdx = 0; roleDataIdx < roleRaw.length; roleDataIdx++) {
+
+                roleArray.push(roleRaw[roleDataIdx].tag);
+
+            }
+
+            for (var genreDataIdx = 0; genreDataIdx < genreRaw.length; genreDataIdx++) {
+
+                genreArray.push(genreRaw[genreDataIdx].tag);
+
+            }
+
+            for (var countryDataIdx = 0; countryDataIdx < countryRaw.length; countryDataIdx++) {
+
+                countryArray.push(countryRaw[countryDataIdx].tag);
+
+            }
+
+			for (var writerDataIdx = 0; writerDataIdx < writerRaw.length; writerDataIdx++) {
+
+                writerArray.push(writerRaw[writerDataIdx].tag);
+
+            }
+
+			for (var directorDataIdx = 0; directorDataIdx < directorRaw.length; directorDataIdx++) {
+
+                directorArray.push(directorRaw[directorDataIdx].tag);
+
+            }
+
+            roleArray.join();
+            genreArray.join();
+            countryArray.join();
+			writerArray.join();
+			directorArray.join();
+
+            var created = recordData[recordDataIdx].addedAt;
+            var updated = recordData[recordDataIdx].updatedAt;
+            var viewed = recordData[recordDataIdx].lastViewedAt;
+            var duration = recordData[recordDataIdx].duration + '';
+
+            min = Math.floor((duration / 1000 / 60) << 0);
+
+            var cD = new Date(0); // The 0 there is the key, which sets the date to the epoch
+            cD.setUTCSeconds(created);
+            var gdtCreted = new GlideDateTime();
+
+            var uD = new Date(0); // The 0 there is the key, which sets the date to the epoch
+            uD.setUTCSeconds(updated);
+            var gdtUpdated = new GlideDateTime();
+
+            var vD = new Date(0); // The 0 there is the key, which sets the date to the epoch
+            vD.setUTCSeconds(viewed);
+            var gdtViwed = new GlideDateTime();
+
+
+            var map = {
+
+                u_key: recordData[recordDataIdx].ratingKey + '',
+                u_title: recordData[recordDataIdx].title + '',
+                u_guid: recordData[recordDataIdx].guid + '',
+                u_studio: recordData[recordDataIdx].studio + '',
+                u_type: recordData[recordDataIdx].type + '',
+                u_contentRating: recordData[recordDataIdx].contentRating + '',
+                u_summary: recordData[recordDataIdx].summary + '',
+                u_audienceRating: recordData[recordDataIdx].audienceRating + '',
+                u_viewCount: recordData[recordDataIdx].viewCount + '',
+                u_lastViewedAt: gdtViwed + '',
+                u_year: recordData[recordDataIdx].year + '',
+                u_thumb: recordData[recordDataIdx].thumb + '',
+                u_duration: min + '',
+                u_originallyAvailableAt: recordData[recordDataIdx].originallyAvailableAt + '',
+                u_addedAt: gdtCreted + '',
+                u_updatedAt: gdtUpdated + '',
+                u_tagline: recordData[recordDataIdx].tagline + '',
+                u_skipCount: recordData[recordDataIdx].skipCount + '',
+                u_genre: genreArray + '',
+                u_country: countryArray + '',
+                u_role: roleArray + '',
+				u_writer: writerArray + '',
+				u_director: directorArray + '',
+                u_parent: parentRec + '',
+            };
+            import_set_table.insert(map);
+        }
+
+    }
+
+})(import_set_table);]]></data_loader>
+        <database_name/>
+        <database_port/>
+        <discard_arrays>true</discard_arrays>
+        <expand_node_children>false</expand_node_children>
+        <file_path/>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>0</header_row>
+        <import_set_table_label>Plex Movies Import</import_set_table_label>
+        <import_set_table_name>u_plex_movies_import</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <last_success_import_time>2023-12-02 10:39:22</last_success_import_time>
+        <ldap_target/>
+        <ldapprobe_result_set_rows>200</ldapprobe_result_set_rows>
+        <limit/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>Plex - Movies</name>
+        <offset>0</offset>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <parsing_script><![CDATA[// The input value can be accessed through the variables named "line", "lineNumber" and "result"
+// The function uses result variable to return parse result back. 
+(function(line,lineNumber,result) {
+	// add code here
+})(line,lineNumber,result);]]></parsing_script>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <request_action/>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>0</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <support_pagination>false</support_pagination>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-26 15:22:58</sys_created_on>
+        <sys_id>d5265178c33ef15001c439af05013162</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Plex - Movies</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</sys_scope>
+        <sys_update_name>sys_data_source_d5265178c33ef15001c439af05013162</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:26</sys_updated_on>
+        <table_name/>
+        <type>CUSTOM</type>
+        <use_batch_import>false</use_batch_import>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Plex">49dbb9ccc3c7711001c439af0501316f</claim_owner_scope>
+        <claim_timestamp>18c40df01bf0000001</claim_timestamp>
+        <metadata_update_name>sys_data_source_d5265178c33ef15001c439af05013162</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Plex</previous_claim_name>
+        <previous_claim_scope>49dbb9ccc3c7711001c439af0501316f</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 20:43:26</sys_created_on>
+        <sys_id>b9dff584c30b711001c439af050131d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 20:43:26</sys_updated_on>
+    </sys_claim>
+</record_update>
